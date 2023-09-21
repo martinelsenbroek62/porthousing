@@ -1,0 +1,28 @@
+.propertyCard {
+  display: grid;
+}
+
+.propertyCardImage {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.propertyCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.75s ease;
+}
+
+.propertyCardImage:hover img {
+  transform: scale(1.05);
+}
+
+.propertyCardTitle {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 0;
+}

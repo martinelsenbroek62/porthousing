@@ -1,0 +1,121 @@
+.propertyHeroContainer {
+  display: grid;
+  grid-template-columns: calc(75% - 1em) 25%;
+  gap: 1em;
+  margin-top: 2.5em;
+  grid-template-rows: 500px auto;
+}
+
+.propertyHeroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.propertyHeroImage {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.propertyMapContainer iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.propertyHeroContent {
+  display: grid;
+  grid-template-rows: calc(50% - 1em) 50%;
+  gap: 1em;
+}
+
+button.propertyGalleryContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.propertyMapContainer {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.leadInText {
+  display: block;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: var(--primary);
+  margin-top:1em;
+  margin-bottom: 1.5em;
+}
+
+.propertyTitle {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+
+section.relatedProperties {
+  margin: 5em 0;
+}
+
+.propertyDescription {
+  font-size: 1.15em;
+  color: var(--primary);
+}
+
+button.propertyGalleryContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(.75);
+}
+
+.propertyDetailsContainer {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.applyBtn {
+  height: fit-content;
+}
+
+.propertyAddress {
+  text-decoration: underline;
+}
+
+.iconBlock {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  font-size: 1.15em;
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 1275px) {
+  .propertyHeroContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vw auto;
+  }
+
+  .propertyHeroContainer > div:nth-of-type(3) {
+      grid-row-start: 2;
+  }
+
+  .propertyHeroContent {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100%;
+  }
+
+  h1.propertyTitle {
+      font-size: 2em;
+      line-height: 1em;
+      margin-top: 0.25em;
+  }
+}
